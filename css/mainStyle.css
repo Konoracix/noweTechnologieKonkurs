@@ -1,0 +1,243 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-Y: hidden;
+	background-color: #e0e0e0;
+	font-family: 'Roboto Mono', monospace;
+}
+#navBar{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #e0e0e0;
+	width: 100vw;
+	height: 5vh;
+	position: sticky;
+	top: 0;
+	z-index: 2137;
+}
+#navBar div{
+	height: auto;
+	width: 20vw;
+	text-align: center;
+}
+#titleText{
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+	width: 100vw;
+	text-align: center;
+	font-size: 69px;
+	text-shadow: 2px 2px #2b2b2b52;
+}
+@keyframes slideInFromLeft {
+	0% {transform: translateX(-100%);}
+	100% {transform: tr	anslateX(0);}
+}
+#titleDiv{
+	background-color: #e0e0e0;
+	width: 100vw;
+	height: 100vh;
+	animation: 1.3s ease-out 0s 1 slideInFromLeft;
+}
+#firstTechnology{
+	width: 100vw;
+	height: 100vh;
+	background-color: #e0e0e0;
+}
+#gameContainer{
+	width: 100vw;
+	height: 100vh;
+}
+.myButton {
+	position: relative;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #36c744;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	bottom: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.myButton:hover{
+	transition-duration: 0.7s;
+    font-size: 20px;
+}
+.myButton:active {
+	position:relative;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #36c744;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	bottom: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} 
+.myButton:visited{
+	position: relative;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #36c744;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	bottom: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* .myButton:link{
+	position: relative;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #36c744;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	bottom: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
+#gameContainer{
+	width: 100vw;
+	height: 100vh;
+}
+#gameTitle{
+	position: absolute;
+	left: 50vw;
+	top: 460vh;
+	transform: translateX(-50%);
+}
+#gameDescription{
+	text-align: center;
+	position: absolute;
+	left: 50vw;
+	top: 480vh;
+	transform: translateX(-50%);
+}
+#firstTechnologyNav{
+	
+}
+#firstTechnologyNav:hover{
+	transition-duration: 0.7s;
+    font-size: 20px;
+}
+#secondTechnologyNav{
+	
+}
+#secondTechnologyNav:hover{
+	transition-duration: 0.7s;
+    font-size: 20px;
+}
+#thirdTechnologyNav{
+	
+}
+#thirdTechnologyNav:hover{
+	transition-duration: 0.7s;
+    font-size: 20px;
+}
+#gameNav{
+	
+}
+#gameNav:hover{
+	transition-duration: 0.7s;
+    font-size: 20px;
+}
+#bitcoinWorth{
+	
+}
+@media only screen and (max-width: 800px){
+	#fileIcon{
+		display: none;
+	}
+	#laptopIcon{
+		display: none;
+	}
+	#wifiIcon{
+		display: none;
+	}
+	#downCircledIcon{
+		position: absolute;
+		font-size: 70px;
+		bottom: 5vh; 
+		left: 50vw;
+		transform: translateX(-50%);
+		color: black;
+		animation: circledIconAnimation 2.3s ease forwards;
+	}
+	#downCircledIcon:hover{
+		transition-duration: 0.7s;
+		font-size: 64px;
+		text-shadow: 2px 2px #ff0000;
+		color: black; 
+	}
+	#navBar{
+		display: none;
+	}
+	#titleText{
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100vw;
+		text-align: center;
+		font-size: 50px;
+		text-shadow: 2px 2px #2b2b2b52;
+	}
+}
+/* @media only screen and (max-width: 700px){
+	#fileIcon{
+		display: none;
+	}
+	#laptopIcon{
+		display: none;
+	}
+	#wifiIcon{
+		display: none;
+	}
+	#downCircledIcon{
+		position: absolute;
+		font-size: 70px;
+		bottom: 5vh; 
+		left: 50vw;
+		transform: translateX(-50%);
+		color: black;
+		animation: circledIconAnimation 2.3s ease forwards;
+	}
+	#downCircledIcon:hover{
+		transition-duration: 0.7s;
+		font-size: 64px;
+		text-shadow: 2px 2px #ff0000;
+		color: black; 
+	}
+} */

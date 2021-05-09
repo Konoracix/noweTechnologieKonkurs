@@ -1,0 +1,63 @@
+
+#fileIcon{
+	font-size: 70px;
+	animation-name: showFirstIcon;
+	animation-duration: 4s;
+	position: absolute;
+	transform: translateX(-50%); 
+	top: 30vh; left: 60vw;
+	text-shadow: 2px 2px #63636352;
+}
+#laptopIcon{
+	font-size: 70px;
+	animation-name: showFirstIcon;
+	animation-duration: 3s;
+	position: absolute;
+	transform: translateX(-50%); 
+	top: 30vh; left: 40vw;
+	text-shadow: 2px 2px #63636352;
+}
+#wifiIcon{
+	font-size: 70px;
+	animation-name: showThirdIcon;
+	animation-duration: 3.7s;
+	position: absolute;
+	transform: translateX(-50%); 
+	top: 30vh; left: 50vw;
+	text-shadow: 2px 2px #63636352;
+}
+#downCircledIcon{
+	position: absolute;
+	font-size: 70px;
+	bottom: 5vh; 
+	left: 50vw;
+	transform: translateX(-50%);
+	color: black;
+	animation: circledIconAnimation 2.3s ease forwards;
+}
+#downCircledIcon:hover{
+	transition-duration: 0.7s;
+    font-size: 64px;
+	text-shadow: 2px 2px #ff0000;
+	color: black; 
+}
+@keyframes showSecondIcon {
+	0% {visibility: hidden}
+	75%  {visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.5s linear;}
+ 	100% {visibility: visible;}
+}
+@keyframes showThirdIcon{
+	0% {visibility: hidden}
+	60%  {visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.5s linear;}
+ 	100% {visibility: visible;}
+}
+@keyframes showFirstIcon {
+	0% {visibility: hidden}
+	37%  {visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.5s linear;}
+ 	100% {visibility: visible;}
+}
+@keyframes circledIconAnimation {
+	0% {bottom: -25vh; transform: translateX(-50%);}
+	25% {bottom: -25vh; transform: translateX(-50%);}
+	100% {transform: translateY(6vh), oppacity 0.5s; transform: translateX(-50%);}
+}

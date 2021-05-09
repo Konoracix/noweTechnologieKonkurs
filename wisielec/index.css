@@ -1,0 +1,57 @@
+body{
+    background-color: #e0e0e0;
+}
+#password{
+    background-color: #e0e0e0;
+    width: 100vw;
+    height: 13vh;
+    text-align: center;
+    font-size: 70px;
+}
+#inputArea{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+#container{
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: auto;
+    transform: translateY(-50%);
+}
+#hearts{
+    position:absolute;
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+#firstHeart{
+    width: 7vw;
+    visibility: visible;
+}
+#statusContainer{
+    position:absolute;
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+#secondHeart{
+    width: 7vw;
+}
+#thirdHeart{
+    width: 7vw;
+}
+#fourthHeart{
+    width: 7vw;
+}
+#fifthHeart{
+    width: 7vw;
+}
+#letter{
+    font-size: 2rem;
+    text-align: center;
+}
+#button{
+    font-size: 2rem;
+}
