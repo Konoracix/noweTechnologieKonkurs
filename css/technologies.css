@@ -147,28 +147,6 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
-	/* #firstScrollIcon{
-		position: relative;
-		font-size: 70px;
-		top: 35vh;
-		right: -70vw;
-		bottom: 18vh;
-
-	}
-	#secondScrollIcon{
-		position: relative;
-		font-size: 70px;
-		top: 35vh;
-		right: -70vw;
-		bottom: 18vh;
-	}
-	#thirdScrollIcon{
-		position: relative;
-		font-size: 70px;
-		top: 35vh;
-		right: -70vw;
-		bottom: 18vh;
-	} */
 	#firstScrollIcon {
 		visibility: hidden;
 	}
