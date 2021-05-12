@@ -81,7 +81,6 @@ function chechIfTheSameLetterInPassword(letter) {
 }
 
 function loadValue() {
-	console.log("chuj");
 	if (!isNaN(document.getElementById("letter").value) && gameStatus == "playing") {
 		// document.getElementById("wrongInput").innerHTML =
 		alert("Musisz wpisać literę");
