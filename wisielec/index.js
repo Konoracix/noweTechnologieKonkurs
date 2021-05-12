@@ -82,7 +82,26 @@ function chechIfTheSameLetterInPassword(letter) {
 }
 
 function loadValue() {
-	if (document.getElementById("letter").value.length == 1) {
+	if (
+		document.getElementById("letter").value.length > 1 &&
+		gameStatus == "playing"
+	) {
+		document.getElementById("wrongInput").innerHTML =
+			"Musisz wpisać tylko<br>jedną literę";
+		document.getElementById("letter").value = "";
+	} else if (
+		!isNaN(document.getElementById("letter").value) &&
+		gameStatus == "playing"
+	) {
+		document.getElementById("wrongInput").innerHTML =
+			"Musisz wpisać literę";
+		document.getElementById("letter").value = "";
+	}
+	if (
+		document.getElementById("letter").value.length == 1 &&
+		isNaN(document.getElementById("letter").value)
+	) {
+		document.getElementById("wrongInput").innerHTML = "";
 		if (gameStatus == "playing") {
 			let letter = document
 				.getElementById("letter")
@@ -90,6 +109,7 @@ function loadValue() {
 			document.getElementById("letter").value = "";
 			letter = letter.toLocaleLowerCase();
 			chechIfTheSameLetterInPassword(letter);
+			document.getElementById("letter").focus();
 		}
 	}
 }

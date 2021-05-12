@@ -55,3 +55,19 @@ body{
 #button{
     font-size: 2rem;
 }
+#wrongInput{
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    text-align: center;
+    width: auto;
+    font-size: auto;
+}
+@media only screen and (max-width: 800px){
+	#inputArea{
+        position: absolute;
+        right: 50vw;
+        top: 40vh;
+        transform: translateX(50%);
+    }
+}

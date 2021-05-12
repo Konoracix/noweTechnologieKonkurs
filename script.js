@@ -8,7 +8,7 @@ for (let i = 0; i < buttons.length; i++) {
 const navButtons = document.querySelectorAll("#navBar div");
 for (let i = 0; i < navButtons.length; i++) {
 	navButtons[i].addEventListener("click", () => {
-		sections[i + 1].scrollIntoView();
+		sections[i].scrollIntoView();
 	});
 }
 
@@ -27,3 +27,7 @@ function displayData(data) {
 	const dane = await getCryptoValues();
 	displayData(dane);
 })();
+
+function goToTitlePage() {
+	document.getElementById("titleDiv").scrollIntoView();
+}

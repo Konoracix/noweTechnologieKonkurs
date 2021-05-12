@@ -1,13 +1,14 @@
 html{
 	scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 body{
 	margin: 0;
 	padding: 0;
 	width: 100vw;
 	box-sizing: border-box;
-	overflow-x: hidden;
-	overflow-Y: hidden;
 	background-color: #e0e0e0;
 	font-family: 'Roboto Mono', monospace;
 }
@@ -16,15 +17,15 @@ body{
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #e0e0e0;
+	background-color: #cfcfcf;
 	width: 100vw;
-	height: 5vh;
+	height: 7vh;
 	position: sticky;
 	top: 0;
 	z-index: 2137;
 }
 #navBar div{
-	height: auto;
+	height: 120%;
 	width: 20vw;
 	text-align: center;
 }
@@ -48,11 +49,7 @@ body{
 	height: 100vh;
 	animation: 1.3s ease-out 0s 1 slideInFromLeft;
 }
-#firstTechnology{
-	width: 100vw;
-	height: 100vh;
-	background-color: #e0e0e0;
-}
+
 #gameContainer{
 	width: 100vw;
 	height: 100vh;
@@ -111,23 +108,6 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-/* .myButton:link{
-	position: relative;
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #36c744;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-	bottom: -50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
 #gameContainer{
 	width: 100vw;
 	height: 100vh;
@@ -135,46 +115,53 @@ body{
 #gameTitle{
 	position: absolute;
 	left: 50vw;
-	top: 460vh;
+	top: 450vh;
 	transform: translateX(-50%);
 }
 #gameDescription{
 	text-align: center;
 	position: absolute;
 	left: 50vw;
-	top: 480vh;
+	top: 460vh;
 	transform: translateX(-50%);
 }
+#titlePageNav{
+	font-size: 2vh;
+}
+#titlePageNav:hover{
+	transition-duration: 0.7s;
+    font-size: 1.8vh;
+}
 #firstTechnologyNav{
-	
+	font-size: 2vh;
 }
 #firstTechnologyNav:hover{
 	transition-duration: 0.7s;
-    font-size: 20px;
+    font-size: 1.8vh;
 }
 #secondTechnologyNav{
-	
+	font-size: 2vh;
 }
 #secondTechnologyNav:hover{
 	transition-duration: 0.7s;
-    font-size: 20px;
+    font-size: 1.8vh;
 }
 #thirdTechnologyNav{
-	
+	font-size: 2vh;
 }
 #thirdTechnologyNav:hover{
 	transition-duration: 0.7s;
-    font-size: 20px;
+    font-size: 1.8vh;
 }
 #gameNav{
-	
+	font-size: 2vh;
 }
 #gameNav:hover{
 	transition-duration: 0.7s;
-    font-size: 20px;
+    font-size: 1.8vh;
 }
 #bitcoinWorth{
-	
+	font-size: 2vh;
 }
 @media only screen and (max-width: 800px){
 	#fileIcon{
@@ -213,6 +200,73 @@ body{
 		text-align: center;
 		font-size: 50px;
 		text-shadow: 2px 2px #2b2b2b52;
+	}
+	.myButton {
+		position: relative;
+		background-color:#44c767;
+		border-radius:28px;
+		border:1px solid #36c744;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		padding:16px 31px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2f6627;
+		bottom: -70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.myButton:hover{
+		transition-duration: 0.7s;
+		font-size: 20px;
+	}
+	.myButton:active {
+		position:relative;
+		background-color:#44c767;
+		border-radius:28px;
+		border:1px solid #36c744;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2f6627;
+		bottom: -70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} 
+	.myButton:visited{
+		position: relative;
+		background-color:#44c767;
+		border-radius:28px;
+		border:1px solid #36c744;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		padding:16px 31px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2f6627;
+		bottom: -70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#gameTitle{
+		position: absolute;
+		left: 50vw;
+		top: 720vh;
+		transform: translateX(-50%);
+	}
+	#gameDescription{
+		text-align: center;
+		position: absolute;
+		left: 50vw;
+		top: 735vh;
+		transform: translateX(-50%);
 	}
 }
 /* @media only screen and (max-width: 700px){
