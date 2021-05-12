@@ -1,73 +1,106 @@
-body{
-    background-color: #e0e0e0;
+body {
+	background-color: #e0e0e0;
 }
-#password{
-    background-color: #e0e0e0;
-    width: 100vw;
-    height: 13vh;
-    text-align: center;
-    font-size: 70px;
+#password {
+	background-color: #e0e0e0;
+	width: 100vw;
+	height: 13vh;
+	text-align: center;
+	font-size: 70px;
 }
-#inputArea{
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+#inputArea {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
 }
-#container{
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    height: auto;
-    transform: translateY(-50%);
+#container {
+	position: absolute;
+	top: 50%;
+	width: 100vw;
+	height: auto;
+	transform: translateY(-50%);
 }
-#hearts{
-    position:absolute;
-    top: 20vh;
-    left: 50vw;
-    transform: translateX(-50%);
+#hearts {
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	transform: translateX(-50%);
 }
-#firstHeart{
-    width: 7vw;
-    visibility: visible;
+#firstHeart {
+	width: 7vw;
+	visibility: visible;
 }
-#statusContainer{
-    position:absolute;
-    top: 20vh;
-    left: 50vw;
-    transform: translateX(-50%);
+#statusContainer {
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	transform: translateX(-50%);
 }
-#secondHeart{
-    width: 7vw;
+#secondHeart {
+	width: 7vw;
 }
-#thirdHeart{
-    width: 7vw;
+#thirdHeart {
+	width: 7vw;
 }
-#fourthHeart{
-    width: 7vw;
+#fourthHeart {
+	width: 7vw;
 }
-#fifthHeart{
-    width: 7vw;
+#fifthHeart {
+	width: 7vw;
 }
-#letter{
-    font-size: 2rem;
-    text-align: center;
+#letter {
+	font-size: 2rem;
+	text-align: center;
+	max-width: 40vw;
 }
-#button{
-    font-size: 2rem;
+#button {
+	font-size: 2rem;
+	display: block;
+	float: left;
 }
-#wrongInput{
-    position: absolute;
-    top: 1vh;
-    left: 1vh;
-    text-align: center;
-    width: auto;
-    font-size: auto;
+
+.myButton {
+	background-color: #44c767;
+	border-radius: 28px;
+	border: 1px solid #36c744;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+	max-width: 30vw;
+	min-width: 15vw;
+	text-align: center;
 }
-@media only screen and (max-width: 800px){
-	#inputArea{
-        position: absolute;
-        right: 50vw;
-        top: 40vh;
-        transform: translateX(50%);
+.myButton:hover {
+	transition-duration: 0.2s;
+	background-color: #2ec556;
+}
+@media only screen and (max-width: 800px) {
+	#inputArea {
+		position: absolute;
+		right: 50vw;
+		top: 40vh;
+		transform: translateX(50%);
+	}
+    .myButton {
+        background-color: #44c767;
+        border-radius: 28px;
+        border: 1px solid #36c744;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 1.1em;
+        margin-top: 20px;
+        padding: 16px 31px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2f6627;
+        max-width: 30vw;
+        min-width: 15vw;
+        text-align: center;
     }
 }

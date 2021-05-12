@@ -258,14 +258,14 @@ body{
 	#gameTitle{
 		position: absolute;
 		left: 50vw;
-		top: 720vh;
+		top: 605vh;
 		transform: translateX(-50%);
 	}
 	#gameDescription{
 		text-align: center;
 		position: absolute;
 		left: 50vw;
-		top: 735vh;
+		top: 618vh;
 		transform: translateX(-50%);
 	}
 }
@@ -295,3 +295,6 @@ body{
 		color: black; 
 	}
 } */
+/* todo */
+/* tam gdzie jest tekst paragraf
+maksymalny width ma być 75ch a fajnie było gdyby 45ch większe zdjęcia na teflonie i zmienić przycisk w grze */

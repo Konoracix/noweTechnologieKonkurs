@@ -32,8 +32,7 @@ function wrote() {
 
 	for (let f = 0; f < hiddenPassword.length; f++) {
 		if (hiddenPassword.charAt(f) != " " && tabel[f] == "") {
-			passwordToWrote =
-				passwordToWrote + `${hiddenPassword.charAt(f)}&nbsp;`;
+			passwordToWrote = passwordToWrote + `${hiddenPassword.charAt(f)}&nbsp;`;
 		} else if (hiddenPassword.charAt(f) == " " && tabel[f] == "") {
 			passwordToWrote = passwordToWrote + " ";
 		} else passwordToWrote = passwordToWrote + tabel[f];
@@ -82,30 +81,22 @@ function chechIfTheSameLetterInPassword(letter) {
 }
 
 function loadValue() {
-	if (
-		document.getElementById("letter").value.length > 1 &&
-		gameStatus == "playing"
-	) {
-		document.getElementById("wrongInput").innerHTML =
-			"Musisz wpisać tylko<br>jedną literę";
+	if (!isNaN(document.getElementById("letter").value) && gameStatus == "playing") {
+		// document.getElementById("wrongInput").innerHTML =
+		alert("Musisz wpisać literę");
 		document.getElementById("letter").value = "";
-	} else if (
-		!isNaN(document.getElementById("letter").value) &&
-		gameStatus == "playing"
-	) {
-		document.getElementById("wrongInput").innerHTML =
-			"Musisz wpisać literę";
+		document.getElementById("letter").focus();
+	} else if (document.getElementById("letter").value.length > 1 && gameStatus == "playing") {
+		// document.getElementById("wrongInput").innerHTML =
+		// 	"Musisz wpisać tylko<br>jedną literę";
+		alert("Musisz wpisać tylko jedną literę");
 		document.getElementById("letter").value = "";
+		document.getElementById("letter").focus();
 	}
-	if (
-		document.getElementById("letter").value.length == 1 &&
-		isNaN(document.getElementById("letter").value)
-	) {
+	if (document.getElementById("letter").value.length == 1 && isNaN(document.getElementById("letter").value)) {
 		document.getElementById("wrongInput").innerHTML = "";
 		if (gameStatus == "playing") {
-			let letter = document
-				.getElementById("letter")
-				.value.toLocaleLowerCase();
+			let letter = document.getElementById("letter").value.toLocaleLowerCase();
 			document.getElementById("letter").value = "";
 			letter = letter.toLocaleLowerCase();
 			chechIfTheSameLetterInPassword(letter);
